@@ -1,0 +1,8 @@
+<template name="profileFields">
+    {{>afQuickField name='name' placeholder="What is your name?"}}
+    {{>afQuickField name='nickname' placeholder="What do you want others to call?"}}
+    {{>afQuickField name='location' placeholder="Where are you located?"}}
+    {{>afQuickField name='contact' placeholder="Facebook/Twitter/Whatever"}}
+    {{>afQuickField name='interest' noselect="true" options="allowed" type="select-checkbox-inline"}}
+    {{>afQuickField name='description' placeholder="Tell us about what you've done with meteor, how long you've been programming, things like that"}}
+</template>

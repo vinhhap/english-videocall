@@ -1,0 +1,61 @@
+<template name="profileView">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="panel panel-default profile-view">
+                    <div class="panel-body">
+					    <div class="row">
+						    <div class="col-sm-3">
+							    <div class="avatar avatar-large">
+                                    <img class="avatar-image" src="https://secure.gravatar.com/avatar/00000000000000000000000000000000?default=mm&amp;size=200" alt="avatar" onerror="this.style.display='none';">
+                                    <span class="avatar-initials" style="background-color: #aaa; color: #fff;"></span>
+                                </div>
+								<br>
+							    <hr>
+							    <small>
+									<i class="fa fa-map-marker"></i>&nbsp;{{profile.location}}
+        							<hr>
+									<b>Interested In</b>
+                                        {{#each profile.interest}}
+                                            <br>
+                                            {{this}}
+                                        {{/each}}
+									<hr>
+									<i class="fa fa-envelope"></i>&nbsp;{{profile.contact}}
+							    </small>
+						    </div>
+                            <div class="col-sm-9">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h2 class="top-flush">
+                                            {{profile.name}}
+                                        </h2>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <h4>
+                                            {{profile.nickname}}
+                                        </h4>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">  
+                                        <hr>
+                                        {{{profile.description}}}
+                                    </div>
+                                </div>
+                            </div>
+					    </div>
+                        <div class="row">
+                            <div class="col-sm-12">
+                                
+                            </div>
+                        </div>
+				    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</template>

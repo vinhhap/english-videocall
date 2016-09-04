@@ -1,0 +1,52 @@
+@import './lib/variables.less';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: @body-background;
+}
+
+a {
+    text-decoration: none;
+    &:hover, &:link, &:focus, &:active, &:visited {
+        text-decoration: none;
+    }
+}
+
+hr.star-light {
+    padding: 0;
+    border: none;
+    border-top: solid 5px;
+    text-align: center;
+    max-width: 250px;
+    margin: 25px auto 30px;
+}
+hr.three-star:after {
+    content: "\f005 \f005 \f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    font-size: 2em;
+    padding: 0 .25em;
+}
+hr.green:after {
+    background-color: @jumbotron-background;
+}
+
+hr.one-star:after {
+    content: "\f005";
+    font-family: FontAwesome;
+    display: inline-block;
+    position: relative;
+    top: -.8em;
+    font-size: 2em;
+    padding: 0 .25em;
+}
+
+hr.gray:after {
+    background-color: @body-background;
+}

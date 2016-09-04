@@ -1,0 +1,17 @@
+<template name="accountLayout">
+  <div class="wrapper-login">
+    {{> Template.dynamic template=nav}}
+
+    <div id="login-content">
+      <div class="container">
+          <div class="row">
+            <div>
+              {{> Template.dynamic template=main}}
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  {{> Template.dynamic template=footer}}
+</template>

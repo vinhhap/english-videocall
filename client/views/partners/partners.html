@@ -1,0 +1,13 @@
+<template name="partners">
+  <section id="partners-list">
+      <div class="container">
+          <h2 class="text-center">Find a Partner</h2>
+          <hr class="star-light one-star gray">
+          <div class="row">
+              {{#each users}}
+                {{> partner}}
+              {{/each}}
+          </div>
+      </div>
+  </section>
+</template>

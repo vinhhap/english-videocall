@@ -1,0 +1,12 @@
+{
+  "name": "English",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "meteor-node-stubs": "~0.2.0",
+    "peerjs": "^0.3.14"
+  }
+}

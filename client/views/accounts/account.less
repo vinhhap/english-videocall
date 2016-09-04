@@ -1,0 +1,79 @@
+@import '../../lib/variables.less';
+
+.wrapper-login {
+    background: @jumbotron-background;
+    min-height: 768px;
+    color: white;
+    h3 {
+        font-weight: 700;
+        font-size: 4rem;
+        @media (max-width: 768px) {
+            font-size: 3rem;
+        }
+    }
+    .at-pwd-form > form label {
+      display: none;
+    }
+    .form-control {
+        display: block;
+        width: 100%;
+        height: 50px;
+        padding: 8px 12px;
+        font-size: 18px;
+        line-height: 1.42857143;
+        color: @navbar-background;
+        background-color: #ffffff;
+        background-image: none;
+        border: 4px solid @navbar-background;
+        border-radius: 0;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        @media (max-width: 768px) {
+            height: 40px;
+        }
+    }
+    a {
+        color: @navbar-background;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 1.5rem;
+        &:link, &:visited {
+            color: @navbar-background;
+            text-decoration: none;
+        }
+        &:hover, &:active {
+            color: darken(@navbar-background, 20);
+            text-decoration: none;
+        }
+    }
+    button {
+        background: @navbar-background;
+        border-color: @navbar-background;
+        border-radius: 0;
+        color: white;
+        &:hover, &:focus {
+            background: darken(@navbar-background, 20);
+            border-color: darken(@navbar-background, 20);
+            color: white;
+        }
+    }
+    .lost-pass {
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+footer {
+    background: @navbar-background;
+    p {
+        margin-top: 1.7rem;
+        font-weight: 700;
+        color: white;
+        span {
+            color: @jumbotron-background;
+
+        }
+    }
+}

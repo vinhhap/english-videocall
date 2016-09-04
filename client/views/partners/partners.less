@@ -1,0 +1,118 @@
+@import '../../lib/variables.less';
+
+#partners-list  {
+    .panel {
+      padding-top: 1.4rem;
+        border: none;
+        border-radius: 0;
+        -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+        -moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+        -ms-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.14);
+        .block {
+            text-align: center;
+            vertical-align: middle;
+        }
+        .circle {
+            background: @navbar-background;
+            border-radius: 32px;
+            height: 32px;
+            width: 32px;
+            display: table;
+            margin: auto;
+            p {
+                i {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+            }
+        }
+        .view-profile {
+            color: white;
+        }
+        .circle p {
+            vertical-align: middle;
+            display: table-cell;
+        }
+        .panel-heading {
+            background: white;
+            .avatar {
+                img {
+                    border: 3px solid @navbar-background;
+                    padding: 3px;
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+            .nickname {
+                color: #b5b3b3;
+            }
+        }
+
+        .view-profile-btn {
+            color: @navbar-background;
+            text-decoration: none;
+            &:link, &:hover, &:active, &:visited {
+                color: @navbar-background;
+                text-decoration: none;
+            }
+        }
+        .panel-body {
+            border-top: 4px solid @body-background;
+            background: white;
+            padding: 12px;
+            &:hover, &:focus {
+                cursor: pointer;
+                background: darken(white, 20);
+                .view-profile {
+                    color: darken(white, 20);
+                }
+            }
+        }
+
+        .panel-footer {
+            border: none;
+            padding-top: 0;
+            padding-bottom: 0;
+            .col-xs-6 {
+                padding-top: 10px;
+                padding-bottom: 10px;
+                color: white;
+            }
+            .row {
+                border-top: 4px solid @body-background;
+
+            }
+            .left-button {
+                a {
+                    width: 100%;
+                    color: white;
+                    &:link, &:hover, &:active, &:visited {
+                        color: white
+                    }
+                }
+                border-right: 2px solid @body-background;
+                background: @navbar-background;
+                &:hover, &:focus {
+                    background: darken(@navbar-background, 20);
+                    cursor: pointer;
+                }
+            }
+            .right-button {
+                a {
+                    color: white;
+                    &:link, &:hover, &:active, &:visited {
+                        color: white
+                    }
+                }
+                border-left: 2px solid @body-background;
+                background: @jumbotron-background;
+                 &:hover, &:focus {
+                    background: darken(@jumbotron-background, 20);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

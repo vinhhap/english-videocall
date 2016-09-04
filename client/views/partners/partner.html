@@ -1,0 +1,39 @@
+<template name="partner">
+    <div class="col-md-3 col-sm-6 item">
+        <div class="panel panel-default text-center">
+            <div class="panel-heading">
+                <div class="avatar center-block">
+                    <img src="https://placeholdit.imgix.net/~text?txtsize=9&txt=100%C3%97100&w=100&h=100" class="img-responsive img-circle">
+                </div>
+                <h4 class="name">{{profile.name}}</h4>
+                <p class="nickname">{{profile.nickname}}</p>
+            </div>
+            <a href="{{pathFor 'profileView' profileId=profile._id}}" class="view-profile-btn">
+                <div class="panel-body block">
+                <div class="circle view-profile">
+                    <p><i class="fa fa-user" aria-hidden="true"></i></p>
+                </div>
+                <span>View Profile</span>
+            </div>
+            </a>
+            {{#if currentUser}}
+                <div class="panel-footer">
+                    <div class="row">
+                        <a href="{{pathFor 'call' userId=_id}}">
+                            <div class="col-xs-6 left-button">
+                                <i class="fa fa-phone" aria-hidden="true"></i>
+                                <span>Call</span>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="col-xs-6 right-button">
+                                <i class="fa fa-comment" aria-hidden="true"></i>
+                                <span>Chat</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+</template>

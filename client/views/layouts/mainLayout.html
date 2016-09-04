@@ -1,0 +1,13 @@
+<template name="mainLayout">
+  <div id="wrapper">
+    {{> navigation}}
+    <div id="content-wrapper">
+      {{#unless currentUser}}
+        {{> homeBanner}}
+      {{/unless}}
+      <main>
+        {{> Template.dynamic template=main}}
+      </main>
+    </div>
+  </div>
+</template>

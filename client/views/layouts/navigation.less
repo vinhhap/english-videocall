@@ -1,0 +1,62 @@
+@import '../../lib/variables.less';
+
+.navbar-default {
+    border-radius: 0;
+    border: none;
+    background: @navbar-background;
+
+    .navbar-brand, .navbar-nav li a {
+        line-height: 70px;
+        height: 70px;
+        padding-top: 0;
+    }
+
+    .navbar-brand {
+        color: white;
+        font-size: 1.7em;
+        letter-spacing: 0.1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:link, &:visited, &:hover, &:active {
+            color: white;
+        }
+
+    }
+    .navbar-nav{
+        li {
+          a {
+              color: white;
+              font-size: 1em;
+              font-weight: 400;
+              letter-spacing: 0.05rem;
+              &:link, &:visited {
+                  color: white;
+              }
+              &:hover, &:active {
+                  background: darken(@navbar-background, 20);
+                  color: @jumbotron-background;
+              }
+          }
+        }
+    }
+    .navbar-toggle {
+        margin-top: 13px;
+        background-color: transparent;
+        border: 3px solid white;
+        color: white;
+        border-radius: 0;
+        &:focus, &:hover {
+            background-color: darken(@navbar-background, 20);
+            border: 3px solid white;
+        }
+        .icon-bar {
+            background: white;
+            height: 3px;
+        }
+    }
+    .navbar-collapse, .navbar-form {
+        font-weight: 700;
+        border-color: lighten(@navbar-background, 10);
+    }
+
+}
